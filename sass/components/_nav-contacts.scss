@@ -1,0 +1,19 @@
+.nav-contacts {
+  @extend %list;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-left: auto;
+  color: $secondary-text-color;
+}
+
+.nav-contacts__item + .nav-contacts__item {
+  margin-left: 50px;
+}
+
+
+
+.nav-contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

@@ -1,18 +1,23 @@
 @import './utils/variables';
 @import './base/modern-normalize';
-@import './base/my-normalize';
 @import './utils/placeholders';
-@import './components/body';
+@import './layout/body';
 @import './base/visually-hidden';
+@import './layout/section';
+@import './layout/container';
 /* 
 =========== стили шапки 
 */
-@import './components/page-header';
+@import './layout/header';
 @import './components/logo';
-@import './components/navigation';
-@import './components/contacts';
+@import './components/site-nav';
+@import './components/nav-contacts';
 /* 
 =========== стили героя
 */
-@import './components/hero';
+@import './layout/hero';
 @import './components/hero-btn';
+/* 
+=========== особенности
+*/
+@import './layout/peculiarity';
