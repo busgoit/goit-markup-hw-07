@@ -1,0 +1,30 @@
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid tomato; */
+}
+
+%list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+}
+
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
