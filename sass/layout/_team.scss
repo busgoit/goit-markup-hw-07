@@ -3,8 +3,9 @@
 
   &__list {
     @extend %list;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    @include flexWrap();
   }
 
   &__item {
@@ -27,21 +28,28 @@
   &__name {
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+    @include font(500, 16px, 1.19, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
   }
 
   &__position {
-    color: $secondary-text-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 16px;
+
+    color: $secondary-text-color;
+
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+    @include font(400, 16px, 1.19, 0.03em);
+
+    text-align: center;
   }
 }

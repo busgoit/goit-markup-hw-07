@@ -13,9 +13,10 @@
   }
 
   &__box {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    // display: inline-flex;
+    // align-items: center;
+    // justify-content: center;
+    @include centeredFlex($type: inline-flex);
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -27,9 +28,11 @@
     margin-top: 0;
     margin-bottom: 0;
     color: $secondary-text-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.72;
-    letter-spacing: 0.03em;
+
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.72;
+    // letter-spacing: 0.03em;
+    @include font(400, 14px, 1.72, 0.03em);
   }
 }

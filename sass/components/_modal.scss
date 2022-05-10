@@ -19,9 +19,10 @@
   top: 8px;
   right: 8px;
 
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include centeredFlex();
 
   width: 30px;
   height: 30px;

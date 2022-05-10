@@ -14,12 +14,13 @@
 .portfolio__filter-btn {
   height: 38px;
   padding: 6px 22px;
-  font-family: inherit;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
+
   color: currentColor;
   background-color: $secondary-bgcolor;
   border: 0;
@@ -43,8 +44,9 @@
 
 .portfolio__projects-list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  @include flexWrap();
 }
 
 .project-card {
@@ -85,9 +87,11 @@
 
 .project-card-overlay {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include centeredFlex();
+
   top: 0;
   left: 0;
   width: 100%;
@@ -103,10 +107,12 @@
   width: 322px;
   height: 168px;
   margin: 0;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+
   color: $white-color;
 }
 
@@ -121,18 +127,22 @@
   margin-top: 0;
   margin-bottom: 4px;
   color: $dark-color;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+
+  // font-weight: 700;
+  // font-size: 18px;
+  // line-height: 2;
+  // letter-spacing: 0.06em;
+  @include font(700, 18px, 2, 0.06em);
 }
 
 .projects-type {
   margin-top: 0;
   margin-bottom: 0;
   color: $secondary-text-color;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.03em;
+  @include font(400, 16px, 1.88, 0.03em);
 }

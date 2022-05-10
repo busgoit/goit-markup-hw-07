@@ -1,11 +1,15 @@
 .logo {
   @extend %link;
   display: inline-block;
+
   font-family: $secondary-font-family;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  @include font(700, 26px, 1.19, 0.03em);
+
   color: $logo-text-color;
 }
 

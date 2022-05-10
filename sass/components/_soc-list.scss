@@ -14,9 +14,10 @@
 }
 
 .soc-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include centeredFlex();
   width: 100%;
   height: 100%;
   border-radius: 50%;

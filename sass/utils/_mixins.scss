@@ -1,0 +1,32 @@
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexWrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+// font-weight: 500;
+// font-size: 16px;
+// line-height: 1.19;
+// letter-spacing: 0.03em;
+
+// @include font(500, 16px, 1.19, 0.03em);
+// @include font(500, 14px, 1.14, 0.02em);
+// @include font(400, 12px, 1.17, 0.01em);
+// @include font(400, 14px, 1.72, 0.03em);
+// @include font(400, 16px, 1.72, 0.03em);
+// @include font(700, 14px, 1.14, 0.03em);
+// @include font(700, 16px, 1.88, 0.06em);
+// @include font(700, 20px, 1.15, 0.03em);
+// @include font(700, 36px, 1.17, 0.03em);

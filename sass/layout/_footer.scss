@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 60px;
+  // padding-top: 60px;
   padding-bottom: 60px;
   background-color: $hero-bgcolor;
 }
@@ -9,16 +9,20 @@
 }
 
 .footer__address-meta {
+  margin-top: 60px;
   margin-right: 70px;
 }
 
 .footer__address {
   margin-top: 20px;
   color: $white-color;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.72;
-  letter-spacing: 0.03em;
+
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.72;
+  // letter-spacing: 0.03em;
+  @include font(400, 14px, 1.72, 0.03em);
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -39,10 +43,13 @@
 .footer__contact-link {
   @extend %link;
   color: $footer-contacts-color;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.72;
-  letter-spacing: 0.03em;
+
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.72;
+  // letter-spacing: 0.03em;
+  @include font(400, 14px, 1.72, 0.03em);
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -53,17 +60,25 @@
 }
 
 .footer__soc-list {
+  margin-top: 72px;
   margin-right: 93px;
+}
+
+.footer__subscribe {
+  margin-top: 72px;
 }
 
 .footer__title {
   margin-top: 0;
   margin-bottom: 20px;
   color: $white-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
+
   text-transform: uppercase;
 }
 
@@ -84,15 +99,17 @@
 }
 
 .subscribe__mail {
-  margin-right: 12px;
   width: 358px;
   height: 50px;
+  margin-right: 12px;
   padding: 15px 16px;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.25;
+  // letter-spacing: 0.03em;
+  @include font(400, 16px, 1.72, 0.03em);
+
   color: $footer-contacts-color;
 
   background-color: inherit;
@@ -102,15 +119,19 @@
 }
 
 .subscribe__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include centeredFlex();
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em);
+
   color: $white-color;
   background: $brand-color;
   border: 0;
