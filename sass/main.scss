@@ -11,7 +11,7 @@
 @import './layout/header';
 @import './components/logo';
 @import './components/site-nav';
-@import './components/nav-contacts';
+@import './components/header-contacts';
 /* 
 =========== стили героя
 */
@@ -21,3 +21,31 @@
 =========== особенности
 */
 @import './layout/peculiarity';
+/* 
+=========== чем мы занимаемся
+*/
+@import './components/section-title';
+@import './layout/our-works';
+/* 
+=========== наша команда
+*/
+@import './layout/team';
+@import './components/soc-list';
+/* 
+=========== наши клиенты
+*/
+@import './layout/clients';
+/* 
+=========== футер
+*/
+@import './layout/footer';
+/* 
+=========== модальное окно
+*/
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form';
+/* 
+=========== портфолио
+*/
+@import './layout/portfolio';

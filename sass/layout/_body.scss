@@ -13,3 +13,9 @@ body {
   color: $dark-color;
   background-color: $white-color;
 }
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
