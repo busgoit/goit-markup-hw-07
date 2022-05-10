@@ -10,13 +10,13 @@
   // letter-spacing: 0.03em;
   @include font(700, 26px, 1.19, 0.03em);
 
-  color: $logo-text-color;
+  color: getColor('logoText');
 }
 
 .logo__accent {
-  color: $brand-color;
+  color: getColor('brand');
 }
 
 .logo__text--footer {
-  color: $white-color;
+  color: getColor('secondaryBrand');
 }

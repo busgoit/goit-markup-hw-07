@@ -1,3 +1,4 @@
+@import './utils/colors';
 @import './utils/variables';
 @import './base/modern-normalize';
 @import './utils/placeholders';
@@ -50,3 +51,5 @@
 =========== портфолио
 */
 @import './layout/portfolio';
+@import './components/portfolio-filter-btn';
+@import './components/project-card';

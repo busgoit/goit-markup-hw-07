@@ -20,14 +20,21 @@
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-color: $secondary-bgcolor;
+    background-color: getColor('secondaryBgr');
     border-radius: 4px;
+  }
+
+  &__title {
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    color: getColor('mainText');
   }
 
   &__text {
     margin-top: 0;
     margin-bottom: 0;
-    color: $secondary-text-color;
+    color: getColor('secondaryText');
 
     // font-weight: 400;
     // font-size: 14px;

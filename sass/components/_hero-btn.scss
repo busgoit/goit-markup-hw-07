@@ -5,7 +5,7 @@
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
-  color: $white-color;
+  color: getColor('secondaryBrand');
 
   // font-weight: 700;
   // font-size: 16px;
@@ -13,7 +13,7 @@
   // letter-spacing: 0.06em;
   @include font(700, 16px, 1.88, 0.06em);
 
-  background-color: $brand-color;
+  background-color: getColor('brand');
   border: 0;
   border-radius: 4px;
 
@@ -21,7 +21,7 @@
 
   &:hover,
   &:focus {
-    background-color: $aktive-btn-color;
+    background-color: getColor('aktiveBtn');
     cursor: pointer;
   }
 }
